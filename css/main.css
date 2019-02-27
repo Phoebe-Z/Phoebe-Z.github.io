@@ -1,11 +1,78 @@
-body {
-	background-color:#43315e;
-	background-color:rgb(67, 49, 94);
-	font-family:bahnschrift;
-	color: white;
+/* last validation: 18/02/2019 */
+
+html { 
+  background-color: #AC3B61; 
 }
 
-a {
-	text-decoration: none;
-	color: white;
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-Regular.eot');
+    src: url('fonts/Nunito-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Nunito-Regular.woff2') format('woff2'),
+        url('fonts/Nunito-Regular.woff') format('woff'),
+        url('fonts/Nunito-Regular.ttf') format('truetype'),
+        url('fonts/Nunito-Regular.svg#Nunito-Regular') format('svg');
+}
+
+body {
+	background-color: #EEE2DC;
+	font-family: 'Nunito', "Courier New", monospace;
+	color: #123C69;
+  margin-left: 15em;
+  margin-right: 15em;
+  padding-bottom: 3em;
+  padding-top:2.5em;
+  margin-bottom: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #AC3B61;
+}
+
+/* beginning of navbar */
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #123C69;
+  position: fixed;
+  top: 0;
+  width: 49.3em;
+}
+
+.navlinks {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #EEE2DC;
+  text-align: center;
+  padding: 1ex 1em;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #AC3B61;
+}
+
+/* end of navbar */
+
+p{
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.pic {
+  text-align: center;
+}
+
+iframe {
+	border: 0;
+  display: block;
+  margin: auto;
+  padding-top: 1em;
 }
